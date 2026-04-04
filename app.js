@@ -1,4 +1,7 @@
-// Fake-Login
+// -------------------------------
+// LOGIN-BEREICH
+// -------------------------------
+
 const loginScreen = document.getElementById("login-screen");
 const app = document.getElementById("app");
 const loginBtn = document.getElementById("login-btn");
@@ -6,27 +9,51 @@ const loginStatus = document.getElementById("login-status");
 const userDisplay = document.getElementById("user-display");
 
 loginBtn.addEventListener("click", () => {
-  const user = document.getElementById("username").value || "ics-operator-03";
-  const pass = document.getElementById("password").value;
+  const user = document.getElementById("username").value.trim();
+  const pass = document.getElementById("password").value.trim();
+
+  // Prüfen, ob Username + Passwort existieren
+  const found = USERS.find(u => u.username === user && u.password === pass);
 
   loginStatus.textContent = "Authentifizierung läuft…";
+
   setTimeout(() => {
+    if (!found) {
+      loginStatus.textContent = "Zugang verweigert – ungültige Anmeldedaten.";
+      return;
+    }
+
+    // Login erfolgreich
     loginScreen.style.display = "none";
     app.style.display = "flex";
-    userDisplay.textContent = user.toUpperCase();
+
+    userDisplay.textContent = found.username.toUpperCase();
+
     document.getElementById("audit-log").textContent =
-      "Zugriff protokolliert – " + new Date().toLocaleString("de-DE") + " – Benutzer: " + user;
+      "Zugriff protokolliert – " +
+      new Date().toLocaleString("de-DE") +
+      " – Benutzer: " +
+      found.username;
+
     renderResults(PERSONS);
-  }, 800);
+  }, 700);
 });
 
-// Suche & Filter
+
+// -------------------------------
+// SUCH- UND FILTERBEREICH
+// -------------------------------
 
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-btn");
 const statusFilter = document.getElementById("status-filter");
 const resultsBody = document.getElementById("results-body");
 const detailsContent = document.getElementById("details-content");
+
+
+// -------------------------------
+// ERGEBNISLISTE RENDERN
+// -------------------------------
 
 function renderResults(list) {
   resultsBody.innerHTML = "";
@@ -43,6 +70,11 @@ function renderResults(list) {
     resultsBody.appendChild(tr);
   });
 }
+
+
+// -------------------------------
+// DETAILANSICHT
+// -------------------------------
 
 function showDetails(person) {
   detailsContent.innerHTML = `
@@ -77,6 +109,11 @@ function showDetails(person) {
   `;
 }
 
+
+// -------------------------------
+// SUCHE ANWENDEN
+// -------------------------------
+
 function applySearch() {
   const term = searchInput.value.toLowerCase().trim();
   const status = statusFilter.value;
@@ -97,8 +134,15 @@ function applySearch() {
   detailsContent.innerHTML = `<p>${filtered.length} Treffer gefunden. Bitte Datensatz auswählen.</p>`;
 }
 
+
+// -------------------------------
+// EVENT-LISTENER
+// -------------------------------
+
 searchBtn.addEventListener("click", applySearch);
+
 searchInput.addEventListener("keydown", e => {
   if (e.key === "Enter") applySearch();
 });
+
 statusFilter.addEventListener("change", applySearch);
