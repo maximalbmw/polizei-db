@@ -6,24 +6,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- LOGIN SCREEN -->
   <div class="login-screen" id="login-screen">
     <div class="login-box">
+
+      <img 
+        src="https://www.polizei.hessen.de/sites/polizei.hessen.de/files/styles/crop_image_style_16_9_xs/public/2025-10/logo-polizei_he_16x9.png?itok=cZklA9cA" 
+        class="login-logo"
+        alt="Polizei Hessen Logo"
+      >
+
       <h1>POLIS // Zugriffskontrolle</h1>
+
       <label>Benutzername</label>
       <input type="text" id="username" placeholder="ics-operator-03">
+
       <label>Passwort</label>
       <input type="password" id="password" placeholder="••••••••">
+
       <button id="login-btn">Anmelden</button>
       <div class="login-status" id="login-status"></div>
     </div>
   </div>
 
+  <!-- APP -->
   <div class="app" id="app" style="display:none;">
     <header class="topbar">
       <div class="topbar-left">
+        <img 
+          src="https://www.polizei.hessen.de/sites/polizei.hessen.de/files/styles/crop_image_style_16_9_xs/public/2025-10/logo-polizei_he_16x9.png?itok=cZklA9cA" 
+          class="topbar-logo"
+          alt="Polizei Hessen Logo"
+        >
         <span class="logo">POLIS</span>
         <span class="subtitle">Polizei-Lagedatenbank // Intern</span>
       </div>
+
       <div class="topbar-right">
         <span id="user-display"></span>
         <span class="badge badge-green">VERBUNDEN</span>
@@ -39,6 +58,7 @@
           <li>Fälle</li>
           <li>Berichte</li>
         </ul>
+
         <div class="sidebar-footer">
           <div>Audit-Log</div>
           <small id="audit-log">Zugriff protokolliert…</small>
@@ -51,6 +71,7 @@
             <input type="text" id="search-input" placeholder="Suche nach Name, ID, Kennzeichen…">
             <button id="search-btn">Suche</button>
           </div>
+
           <div class="filters-row">
             <select id="status-filter">
               <option value="">Status: alle</option>
@@ -94,4 +115,3 @@
   <script src="app.js"></script>
 </body>
 </html>
-
