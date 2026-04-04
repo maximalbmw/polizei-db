@@ -45,7 +45,7 @@ const PERSONS = [
     lastSeen: "2026-03-28, Köln-Porz",
     risk: "hoch",
     fileRef: "AZ: 23-ED-4711",
-    photo: Semir_Gerkhan.jpg
+    photo: null
   },
 ];
 
