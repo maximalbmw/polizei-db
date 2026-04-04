@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>POLIS – Polizei Informationssystem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-screen" id="login-screen">
+    <div class="login-box">
+      <h1>POLIS // Zugriffskontrolle</h1>
+      <label>Benutzername</label>
+      <input type="text" id="username" placeholder="ics-operator-03">
+      <label>Passwort</label>
+      <input type="password" id="password" placeholder="••••••••">
+      <button id="login-btn">Anmelden</button>
+      <div class="login-status" id="login-status"></div>
+    </div>
+  </div>
+
+  <div class="app" id="app" style="display:none;">
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="logo">POLIS</span>
+        <span class="subtitle">Polizei-Lagedatenbank // Intern</span>
+      </div>
+      <div class="topbar-right">
+        <span id="user-display"></span>
+        <span class="badge badge-green">VERBUNDEN</span>
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav class="sidebar">
+        <h2>Module</h2>
+        <ul>
+          <li class="active">Personen</li>
+          <li>Fahrzeuge</li>
+          <li>Fälle</li>
+          <li>Berichte</li>
+        </ul>
+        <div class="sidebar-footer">
+          <div>Audit-Log</div>
+          <small id="audit-log">Zugriff protokolliert…</small>
+        </div>
+      </nav>
+
+      <main class="main">
+        <section class="search-section">
+          <div class="search-row">
+            <input type="text" id="search-input" placeholder="Suche nach Name, ID, Kennzeichen…">
+            <button id="search-btn">Suche</button>
+          </div>
+          <div class="filters-row">
+            <select id="status-filter">
+              <option value="">Status: alle</option>
+              <option value="AKTIV">AKTIV</option>
+              <option value="GESUCHT">GESUCHT</option>
+              <option value="ARCHIVIERT">ARCHIVIERT</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="content">
+          <div class="results">
+            <h2>Trefferliste</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Geburtsdatum</th>
+                  <th>Status</th>
+                  <th>Region</th>
+                </tr>
+              </thead>
+              <tbody id="results-body"></tbody>
+            </table>
+          </div>
+
+          <div class="details">
+            <h2>Details</h2>
+            <div id="details-content">
+              <p>Bitte einen Datensatz aus der Liste auswählen.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
 
