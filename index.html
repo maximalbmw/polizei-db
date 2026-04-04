@@ -53,7 +53,10 @@
       <nav class="sidebar">
         <h2>Module</h2>
         <ul>
-          <li class="active">Personen</li>
+          <li class="active" data-module="persons">Personen</li>
+          <li data-module="vehicles">Fahrzeuge</li>
+          <li data-module="cases">Fälle</li>
+          <li data-module="map">Karte</li>
           <li id="admin-btn">Admin</li>
         </ul>
 
@@ -66,9 +69,9 @@
       <main class="main">
 
         <!-- SUCHE -->
-        <section class="search-section">
+        <section class="search-section" id="search-section">
           <div class="search-row">
-            <input type="text" id="search-input" placeholder="Suche nach Name, ID, Region…">
+            <input type="text" id="search-input" placeholder="Suche nach Name, ID, Kennzeichen, Region…">
             <button id="search-btn">Suche</button>
           </div>
 
@@ -83,9 +86,10 @@
         </section>
 
         <!-- INHALT -->
-        <section class="content">
-          <div class="results">
-            <h2>Trefferliste</h2>
+        <section class="content" id="content-section">
+          <!-- Personen-Ansicht -->
+          <div class="results" id="results-persons">
+            <h2>Personen – Trefferliste</h2>
             <table>
               <thead>
                 <tr>
@@ -96,21 +100,84 @@
                   <th>Region</th>
                 </tr>
               </thead>
-              <tbody id="results-body"></tbody>
+              <tbody id="results-body-persons"></tbody>
             </table>
           </div>
 
-          <div class="details">
-            <h2>Details</h2>
-            <div id="details-content">
+          <div class="details" id="details-persons">
+            <h2>Personen – Details</h2>
+            <div id="details-content-persons">
               <p>Bitte einen Datensatz aus der Liste auswählen.</p>
             </div>
+          </div>
+
+          <!-- Fahrzeuge-Ansicht -->
+          <div class="results hidden" id="results-vehicles">
+            <h2>Fahrzeuge – Trefferliste</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Kennzeichen</th>
+                  <th>Typ</th>
+                  <th>Status</th>
+                  <th>Region</th>
+                </tr>
+              </thead>
+              <tbody id="results-body-vehicles"></tbody>
+            </table>
+          </div>
+
+          <div class="details hidden" id="details-vehicles">
+            <h2>Fahrzeuge – Details</h2>
+            <div id="details-content-vehicles">
+              <p>Bitte ein Fahrzeug aus der Liste auswählen.</p>
+            </div>
+          </div>
+
+          <!-- Fälle-Ansicht -->
+          <div class="results hidden" id="results-cases">
+            <h2>Fälle – Trefferliste</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>AZ</th>
+                  <th>Titel</th>
+                  <th>Status</th>
+                  <th>Region</th>
+                  <th>Ermittler</th>
+                </tr>
+              </thead>
+              <tbody id="results-body-cases"></tbody>
+            </table>
+          </div>
+
+          <div class="details hidden" id="details-cases">
+            <h2>Fälle – Details</h2>
+            <div id="details-content-cases">
+              <p>Bitte einen Fall aus der Liste auswählen.</p>
+            </div>
+          </div>
+
+          <!-- Karten-Ansicht -->
+          <div class="map-view hidden" id="map-view">
+            <h2>Kartenansicht</h2>
+            <div class="map-container">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=8.5,50.0,9.5,50.5&layer=mapnik&marker=50.15,8.8"
+                style="border:0"
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p class="map-hint">
+              Darstellung beispielhaft (Raum Rhein-Main). Für Filmzwecke kannst du diesen Ausschnitt nutzen.
+            </p>
           </div>
         </section>
 
         <!-- ADMIN PANEL -->
         <div class="admin-panel" id="admin-panel" style="display:none;">
-          <h2>Neuen Datensatz hinzufügen</h2>
+          <h2>Neuen Personendatensatz hinzufügen</h2>
 
           <label>Name</label>
           <input type="text" id="admin-name">
@@ -130,6 +197,9 @@
 
           <label>Notizen</label>
           <textarea id="admin-notes"></textarea>
+
+          <label>Bild der Person</label>
+          <input type="file" id="admin-image" accept="image/*">
 
           <button id="admin-save">Speichern</button>
         </div>
