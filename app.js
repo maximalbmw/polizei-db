@@ -34,7 +34,7 @@ loginBtn.addEventListener("click", () => {
   }, 700);
 });
 
-// SUCHE
+// SUCHE & UI
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-btn");
 const statusFilter = document.getElementById("status-filter");
