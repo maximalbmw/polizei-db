@@ -1,7 +1,4 @@
-// -------------------------------
-// LOGIN-BEREICH
-// -------------------------------
-
+// LOGIN
 const loginScreen = document.getElementById("login-screen");
 const app = document.getElementById("app");
 const loginBtn = document.getElementById("login-btn");
@@ -12,7 +9,6 @@ loginBtn.addEventListener("click", () => {
   const user = document.getElementById("username").value.trim();
   const pass = document.getElementById("password").value.trim();
 
-  // Prüfen, ob Username + Passwort existieren
   const found = USERS.find(u => u.username === user && u.password === pass);
 
   loginStatus.textContent = "Authentifizierung läuft…";
@@ -23,7 +19,6 @@ loginBtn.addEventListener("click", () => {
       return;
     }
 
-    // Login erfolgreich
     loginScreen.style.display = "none";
     app.style.display = "flex";
 
@@ -39,21 +34,12 @@ loginBtn.addEventListener("click", () => {
   }, 700);
 });
 
-
-// -------------------------------
-// SUCH- UND FILTERBEREICH
-// -------------------------------
-
+// SUCHE
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-btn");
 const statusFilter = document.getElementById("status-filter");
 const resultsBody = document.getElementById("results-body");
 const detailsContent = document.getElementById("details-content");
-
-
-// -------------------------------
-// ERGEBNISLISTE RENDERN
-// -------------------------------
 
 function renderResults(list) {
   resultsBody.innerHTML = "";
@@ -70,11 +56,6 @@ function renderResults(list) {
     resultsBody.appendChild(tr);
   });
 }
-
-
-// -------------------------------
-// DETAILANSICHT
-// -------------------------------
 
 function showDetails(person) {
   detailsContent.innerHTML = `
@@ -109,11 +90,6 @@ function showDetails(person) {
   `;
 }
 
-
-// -------------------------------
-// SUCHE ANWENDEN
-// -------------------------------
-
 function applySearch() {
   const term = searchInput.value.toLowerCase().trim();
   const status = statusFilter.value;
@@ -134,15 +110,8 @@ function applySearch() {
   detailsContent.innerHTML = `<p>${filtered.length} Treffer gefunden. Bitte Datensatz auswählen.</p>`;
 }
 
-
-// -------------------------------
-// EVENT-LISTENER
-// -------------------------------
-
 searchBtn.addEventListener("click", applySearch);
-
 searchInput.addEventListener("keydown", e => {
   if (e.key === "Enter") applySearch();
 });
-
 statusFilter.addEventListener("change", applySearch);
