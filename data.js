@@ -34,7 +34,19 @@ const PERSONS = [
     risk: "niedrig",
     fileRef: "AZ: 22-HU-3310",
     photo: null
-  }
+  },
+  {
+    id: "P-2026-153",
+    name: "Semir Gerkhan",
+    dob: "1966-04-22",
+    status: "AKTIV",
+    region: "Köln",
+    notes: "- keine -",
+    lastSeen: "2026-03-28, Köln-Porz",
+    risk: "hoch",
+    fileRef: "AZ: 23-ED-4711",
+    photo: Semir_Gerkhan.jpg
+  },
 ];
 
 const VEHICLES = [
