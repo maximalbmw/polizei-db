@@ -28,6 +28,7 @@ body {
   width: 360px;
   box-shadow: 0 0 40px rgba(0,0,0,0.7);
   text-align: center;
+  border-radius: 6px;
 }
 
 .login-logo {
@@ -58,6 +59,7 @@ body {
   background: #020617;
   border: 1px solid #374151;
   color: #e5e7eb;
+  border-radius: 4px;
 }
 
 .login-box button {
@@ -69,6 +71,7 @@ body {
   color: white;
   font-weight: 600;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .login-box button:hover {
@@ -220,6 +223,7 @@ body {
   background: #020617;
   border: 1px solid #374151;
   color: #e5e7eb;
+  border-radius: 4px;
 }
 
 .search-row button {
@@ -229,6 +233,7 @@ body {
   color: white;
   font-size: 0.9rem;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .search-row button:hover {
@@ -245,6 +250,7 @@ body {
   border: 1px solid #374151;
   color: #e5e7eb;
   font-size: 0.85rem;
+  border-radius: 4px;
 }
 
 /* CONTENT */
@@ -335,6 +341,62 @@ body {
   letter-spacing: 0.12em;
   color: #6b7280;
   margin-top: 0.5rem;
+}
+
+/* ADMIN PANEL */
+
+.admin-panel {
+  background: #020617;
+  border: 1px solid #111827;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+}
+
+.admin-panel h2 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.admin-panel label {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.admin-panel input,
+.admin-panel select,
+.admin-panel textarea {
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.4rem;
+  background: #020617;
+  border: 1px solid #374151;
+  color: #e5e7eb;
+  border-radius: 4px;
+}
+
+.admin-panel textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.admin-panel button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.6rem;
+  background: #2563eb;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.admin-panel button:hover {
+  background: #1d4ed8;
 }
 
 /* RESPONSIVE */
