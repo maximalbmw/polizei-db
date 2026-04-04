@@ -63,7 +63,7 @@ const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-btn");
 const statusFilter = document.getElementById("status-filter");
 
-const resultsBodyPersons = document.getElementById("results-body-persons");
+const resultsBodyPersons  = document.getElementById("results-body-persons");
 const detailsContentPersons = document.getElementById("details-content-persons");
 
 const resultsBodyVehicles = document.getElementById("results-body-vehicles");
@@ -106,7 +106,7 @@ function renderCurrentModule() {
   if (CURRENT_MODULE === "persons") {
     document.getElementById("results-persons").classList.remove("hidden");
     document.getElementById("details-persons").classList.remove("hidden");
-    applySearch(); // auf Personen
+    applySearch();
   } else if (CURRENT_MODULE === "vehicles") {
     document.getElementById("results-vehicles").classList.remove("hidden");
     document.getElementById("details-vehicles").classList.remove("hidden");
@@ -312,7 +312,6 @@ function applySearch() {
         c.region.toLowerCase().includes(term) ||
         c.leadInvestigator.toLowerCase().includes(term);
 
-      // Statusfilter hier optional, da CASES.status andere Werte hat
       return matchesTerm;
     });
 
