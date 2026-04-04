@@ -54,9 +54,7 @@
         <h2>Module</h2>
         <ul>
           <li class="active">Personen</li>
-          <li>Fahrzeuge</li>
-          <li>Fälle</li>
-          <li>Berichte</li>
+          <li id="admin-btn">Admin</li>
         </ul>
 
         <div class="sidebar-footer">
@@ -66,6 +64,8 @@
       </nav>
 
       <main class="main">
+
+        <!-- SUCHE -->
         <section class="search-section">
           <div class="search-row">
             <input type="text" id="search-input" placeholder="Suche nach Name, ID, Region…">
@@ -82,6 +82,7 @@
           </div>
         </section>
 
+        <!-- INHALT -->
         <section class="content">
           <div class="results">
             <h2>Trefferliste</h2>
@@ -106,6 +107,33 @@
             </div>
           </div>
         </section>
+
+        <!-- ADMIN PANEL -->
+        <div class="admin-panel" id="admin-panel" style="display:none;">
+          <h2>Neuen Datensatz hinzufügen</h2>
+
+          <label>Name</label>
+          <input type="text" id="admin-name">
+
+          <label>Geburtsdatum</label>
+          <input type="date" id="admin-dob">
+
+          <label>Status</label>
+          <select id="admin-status">
+            <option value="AKTIV">AKTIV</option>
+            <option value="GESUCHT">GESUCHT</option>
+            <option value="ARCHIVIERT">ARCHIVIERT</option>
+          </select>
+
+          <label>Region</label>
+          <input type="text" id="admin-region">
+
+          <label>Notizen</label>
+          <textarea id="admin-notes"></textarea>
+
+          <button id="admin-save">Speichern</button>
+        </div>
+
       </main>
     </div>
   </div>
