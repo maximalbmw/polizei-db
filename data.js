@@ -36,6 +36,18 @@ const PERSONS = [
     photo: null
   },
   {
+    id: "P-2026-004",
+    name: "Franka Luckner",
+    dob: "1987-08-09",
+    status: "AKTIV",
+    region: "Wiesbaden",
+    notes: "Gesucht wegen schwerer Körperverletzung in 3 Fällen.",
+    lastSeen: "2026-04-05, Wiesbaden, nähe Hauptbahnhof",
+    risk: "hoch",
+    fileRef: "AZ: 26-ED-4561",
+    photo: null
+  },
+  {
     id: "P-2026-153",
     name: "Semir Gerkhan",
     dob: "1966-04-22",
@@ -47,6 +59,18 @@ const PERSONS = [
     fileRef: "AZ: 23-ED-4711",
     photo: null
   },
+  {
+    id: "P-2026-154",
+    name: "Niklas Richter",
+    dob: "2002-12-12",
+    status: "ARCHIVIERT",
+    region: "Gelnhausen",
+    notes: "Gesucht wegen illegalem Kfz Rennen in Frankfurt-Bahnhofsviertel.",
+    lastSeen: "2026-02-07, Frankfurt-Bahnhofsviertel",
+    risk: "niedrig",
+    fileRef: "AZ: 29-AD-9909",
+    photo: null
+  }, 
 ];
 
 const VEHICLES = [
@@ -86,9 +110,19 @@ const VEHICLES = [
     type: "PKW, dunkelgrauer BMW 3er",
     status: "ARCHIVIERT",
     region: "Friedberg (Hessen)",
-    owner: "Max Heller",
+    owner: "Polizeipräsidium Hessen",
     notes: "Registriertes EF.",
     photoUrl: "https://img.bmw-syndikat.de/gallery/142/231/bild_fotos_174899.JPG"
+  },
+  {
+    id: "V-2026-024",
+    plate: "FB-XY 34",
+    type: "PKW, silberner BMW 5er",
+    status: "ARCHIVIERT",
+    region: "Friedberg (Hessen)",
+    owner: "Nils Bach",
+    notes: "Ehemaliges EF des Polizeipräsidiums Bayern.",
+    photoUrl: "https://uploads.carandclassic.co.uk/uploads/cars/bmw/13896362.jpg"
   },
 ];
 
