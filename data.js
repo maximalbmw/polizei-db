@@ -48,6 +48,30 @@ const PERSONS = [
     photo: null
   },
   {
+    id: "P-2026-005",
+    name: "Frank Herbst",
+    dob: "1967-01-09",
+    status: "AKTIV",
+    region: "Rosbach v.d.H",
+    notes: "- keine -",
+    lastSeen: "2026-04-01, Rosbach v.d.H",
+    risk: "niedrig",
+    fileRef: "AZ: 12-ED-2211",
+    photo: null
+  },
+  {
+    id: "P-2026-006",
+    name: "Hartmut Engels",
+    dob: "1999-03-10",
+    status: "AKTIV",
+    region: "Wetzlar",
+    notes: "Gesucht als Zeuge eines illegalen Kfz Rennens in Gießen.",
+    lastSeen: "2023-03-09, Gießen",
+    risk: "niedrig",
+    fileRef: "AZ: 23-AH-6343",
+    photo: null
+  },
+  {
     id: "P-2026-153",
     name: "Semir Gerkhan",
     dob: "1966-04-22",
