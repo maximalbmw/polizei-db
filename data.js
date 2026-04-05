@@ -1927,7 +1927,7 @@ const VEHICLES = [
     status: "ARCHIVIERT",
     region: "Friedberg (Hessen)",
     owner: "Polizeipräsidium Hessen",
-    notes: "Registriertes EF.",
+    notes: "Registriertes EF, Zsw. Hessen.",
     photoUrl: "https://img.bmw-syndikat.de/gallery/142/231/bild_fotos_174899.JPG"
   },
   {
