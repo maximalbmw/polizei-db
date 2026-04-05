@@ -8,16 +8,16 @@ Bei Missbrauch dieser Dtaenbank übernehme ich *keinerlei* Verantwortung!
 
 Alle Rechte an dieser Datenbank verbleiben bei maximalbmw
 
-### Daten
+## Daten
 
 Alle in der Datenbank befindlichen Datensätze wurden KI generiert, Namensgleichheiten zu realen Personen sind reiner Zufall und werden an dieser Stelle zurückgewiesen!
 maximalbmw übernimmt hier *KEINERLEI* Verantwortung!
 
-#### verwendete KI für die Datensätze
+## verwendete KI für die Datensätze
 
 Microsoft© CoPilot
 
-#### Aufruf der github-pages Statische Website
+## Aufruf der github-pages Statische Website
 
 https://maximalbmw.github.io/polizei-db/
 
