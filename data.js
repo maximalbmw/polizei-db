@@ -58,7 +58,7 @@ const VEHICLES = [
     region: "Frankfurt am Main",
     owner: "Jonas Richter",
     notes: "Fluchtfahrzeug bei Einbruchserie, zuletzt Tiefgarage Bockenheim.",
-    photoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0b/2019_BMW_320d_M_Sport_Touring_Automatic_2.0_Front.jpg"
+    photoUrl: "https://th.bing.com/th/id/R.0154dd03fa33675454482f4dfe1abc32?rik=HxJduiUNeLfbQQ&pid=ImgRaw&r=0"
   },
   {
     id: "V-2026-002",
@@ -68,7 +68,7 @@ const VEHICLES = [
     region: "Offenbach",
     owner: "Mara Lehmann",
     notes: "Zeugin, Fahrzeug für An- und Abreise zu Vernehmungen.",
-    photoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4b/2018_Volkswagen_Polo_SE_TSi_1.0_Front.jpg"
+    photoUrl: "https://media.istockphoto.com/photos/front-view-of-red-volkswagen-polo-parked-in-the-street-picture-id1322733971?k=20&m=1322733971&s=612x612&w=0&h=gSf2tRWZeM8t2yRPaW8ZlMjytUIh_nojeyj_fJzKCXo="
   },
   {
     id: "V-2026-003",
@@ -78,7 +78,7 @@ const VEHICLES = [
     region: "Hanau",
     owner: "Tarek Yilmaz",
     notes: "Ehemals in Ermittlungen, Vorgang abgeschlossen.",
-    photoUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5b/Mercedes_Sprinter_II_316_CDI_Kastenwagen_MJ2013.JPG"
+    photoUrl: "https://carwiki.de/wp-content/uploads/2020/10/Mercedes_Benz_Sprinter_Kfz_Steuer-scaled.jpg"
   },
   {
     id: "V-2026-023",
