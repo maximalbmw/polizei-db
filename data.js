@@ -173,6 +173,16 @@ const VEHICLES = [
     photoUrl: "https://cdn.classic-trader.com/I/images/1920_1920_inset/vehicle_ad_standard_image_3f5d09df43a8a3c191329240b8eb5fbf.jpg"
   },
   {
+    id: "V-2026-006",
+    plate: "FB-WH 507 E",
+    type: "PKW, roter Hyundai Kona Elektro",
+    status: "AKTIV",
+    region: "Friedberg (Hessen)",
+    owner: "bisher unbekannt",
+    notes: "Fahrzeug gesucht aufgrund von Verischerungsbetrug.",
+    photoUrl: "https://tse1.mm.bing.net/th/id/OIP.ec70JBw783hf6l_s3Xyf8gHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
+  },
+  {
     id: "V-2026-023",
     plate: "FB-OM 7078",
     type: "PKW, dunkelgrauer BMW 3er",
