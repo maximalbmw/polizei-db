@@ -1628,7 +1628,7 @@ const VEHICLES = [
   region: "Frankfurt am Main",
   owner: "unbekannt",
   notes: "Fahrzeug mehrfach im Bahnhofsviertel gesichtet.",
-  photoUrl: ""
+  photoUrl: "https://i.ytimg.com/vi/9wz4gFaX0Rg/maxresdefault.jpg"
 },
 {
   id: "V-2026-009",
@@ -1638,7 +1638,7 @@ const VEHICLES = [
   region: "Offenbach",
   owner: "unbekannt",
   notes: "Fluchtfahrzeug nach Verkehrsunfallflucht.",
-  photoUrl: ""
+  photoUrl: "https://www.auto-data.net/images/f37/Volkswagen-Passat-Variant-B7.jpg"
 },
 {
   id: "V-2026-010",
@@ -1648,7 +1648,7 @@ const VEHICLES = [
   region: "Bad Homburg",
   owner: "Lena Möller",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://tse4.mm.bing.net/th/id/OIP.zFG6l_o-fKsHa9PhmLhYiQHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
 },
 {
   id: "V-2026-011",
@@ -1658,7 +1658,7 @@ const VEHICLES = [
   region: "Gelnhausen",
   owner: "Autohaus Bergmann",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://images.prismic.io/shacarlacca/e902b7ff-f9de-4bae-b1d9-8573b125df8b_001_a216919.jpg?auto=format,compress"
 },
 {
   id: "V-2026-012",
@@ -1668,7 +1668,7 @@ const VEHICLES = [
   region: "Büdingen",
   owner: "Familie Fischer",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://thumbs.dreamstime.com/b/blau-ford-focuss-41816652.jpg?w=992"
 },
 {
   id: "V-2026-013",
@@ -1678,7 +1678,7 @@ const VEHICLES = [
   region: "Friedberg",
   owner: "unbekannt",
   notes: "Zeugen melden auffälliges Fahrverhalten.",
-  photoUrl: ""
+  photoUrl: "https://www.auktionshausmeyer.de/glide-image/auctions/2955/lots/419c.jpg"
 },
 {
   id: "V-2026-014",
@@ -1688,7 +1688,7 @@ const VEHICLES = [
   region: "Main-Kinzig-Kreis",
   owner: "Zara K.",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://autofilou.at/app/uploads/2017/08/016-2017-Mazda3-Sport-Revolution-Top-G165-test-review-fahrbericht-soul-red-rot-autofilou-1536x1025.jpg"
 },
 {
   id: "V-2026-015",
@@ -1698,7 +1698,7 @@ const VEHICLES = [
   region: "Frankfurt",
   owner: "Tech Solutions GmbH",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://autofilou.at/app/uploads/2024/01/2024-Tesla-Model-3-Long-Range-Maximale-Reichweite-Test-Drive-Review-Fahrbericht-Highland-Upgrade-Facelift-schwarz-black-autofilou-5.jpg"
 },
 {
   id: "V-2026-016",
@@ -1708,7 +1708,7 @@ const VEHICLES = [
   region: "Offenbach",
   owner: "E. Eberhardt",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://tse3.mm.bing.net/th/id/OIP.mgUU9g-4KbQMMdBNtLHhIwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
 },
 {
   id: "V-2026-017",
@@ -1718,7 +1718,7 @@ const VEHICLES = [
   region: "Hanau",
   owner: "T. Riedel",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://th.bing.com/th/id/R.0195d808f800724803205d23491957db?rik=%2boay88U1lxXbdA&riu=http%3a%2f%2fimages.gtcarlot.com%2fpictures%2f140615890.jpg&ehk=iK0qhdBCBkosIiIrQH1O0JmyWyKLoQ3B3PAH1DDmyZ8%3d&risl=&pid=ImgRaw&r=0"
 },
 {
   id: "V-2026-018",
@@ -1728,7 +1728,7 @@ const VEHICLES = [
   region: "Frankfurt",
   owner: "unbekannt",
   notes: "Im Zusammenhang mit Taschendiebstählen gemeldet.",
-  photoUrl: ""
+  photoUrl: "https://img.bmw-syndikat.de/gallery/175/636/778636_bmw-syndikat_bild_high.jpg"
 },
 {
   id: "V-2026-019",
@@ -1738,7 +1738,7 @@ const VEHICLES = [
   region: "Main-Kinzig-Kreis",
   owner: "Handwerk Huber",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://mobiliteitspartners.nl/wp-content/uploads/2019/12/DSC_0929-1619x1080.jpg"
 },
 {
   id: "V-2026-020",
@@ -1748,7 +1748,7 @@ const VEHICLES = [
   region: "Friedberg",
   owner: "O. Peters",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://i.ytimg.com/vi/72Okh1-swNs/maxresdefault.jpg"
 },
 {
   id: "V-2026-021",
@@ -1758,7 +1758,7 @@ const VEHICLES = [
   region: "Büdingen",
   owner: "M. Mertens",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://tse2.mm.bing.net/th/id/OIP.Z6lUL295Mi_L_8Ltd_VOSQHaE6?rs=1&pid=ImgDetMain&o=7&rm=3"
 },
 {
   id: "V-2026-022",
@@ -1768,7 +1768,7 @@ const VEHICLES = [
   region: "Gelnhausen",
   owner: "unbekannt",
   notes: "Zeugen melden nächtliche Rennen.",
-  photoUrl: ""
+  photoUrl: "https://de.driven-autowelt.com/_Resources/Persistent/9/3/b/b/93bb8b6740c0f699f395cd35d02cb8d20ded4375/IPP-All-new-SEAT-Leon_41_HQ.jpg"
 },
 {
   id: "V-2026-023",
@@ -1778,7 +1778,7 @@ const VEHICLES = [
   region: "Frankfurt",
   owner: "L. Langen",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://i.auto-bild.de/ir_img/2/6/7/3/2/7/1/Audi_Q5_2018_schwarz_gebraucht_16zu9-83452a7a637971d5.jpg"
 },
 {
   id: "V-2026-024",
@@ -1788,7 +1788,7 @@ const VEHICLES = [
   region: "Offenbach",
   owner: "P. Reuter",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://autode-static.de/wp-content/uploads/2014/05/Erste-Fahrt-im-Peugeot-308-SW-So-schick-kann-eine-wei-e-Weste-sein-emyk.jpg"
 },
 {
   id: "V-2026-025",
