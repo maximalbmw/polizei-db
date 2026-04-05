@@ -183,6 +183,16 @@ const VEHICLES = [
     photoUrl: "https://tse1.mm.bing.net/th/id/OIP.ec70JBw783hf6l_s3Xyf8gHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
+    id: "V-2026-007",
+    plate: "FB-S 2",
+    type: "PKW, silberner BMW M2",
+    status: "ARCHIVIERT",
+    region: "Friedberg (Hessen)",
+    owner: "B&K GmbH",
+    notes: "- keine -",
+    photoUrl: "https://live.staticflickr.com/65535/51901700226_535c5a3aa7_b.jpg"
+  },
+  {
     id: "V-2026-023",
     plate: "FB-OM 7078",
     type: "PKW, dunkelgrauer BMW 3er",
