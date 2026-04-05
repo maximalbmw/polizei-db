@@ -79,7 +79,17 @@ const VEHICLES = [
     owner: "Tarek Yilmaz",
     notes: "Ehemals in Ermittlungen, Vorgang abgeschlossen.",
     photoUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5b/Mercedes_Sprinter_II_316_CDI_Kastenwagen_MJ2013.JPG"
-  }
+  },
+  {
+    id: "V-2026-023",
+    plate: "FB-OM 7078",
+    type: "PKW, dunkelgrauer BMW 3er",
+    status: "ARCHIVIERT",
+    region: "Friedberg (Hessen)",
+    owner: "Max Heller",
+    notes: "Registriertes EF.",
+    photoUrl: "https://img.bmw-syndikat.de/gallery/142/231/bild_fotos_174899.JPG"
+  },
 ];
 
 const CASES = [
