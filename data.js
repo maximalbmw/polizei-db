@@ -160,7 +160,7 @@ const VEHICLES = [
     region: "Gelnhausen",
     owner: "unbekannt",
     notes: "- keine -",
-    photoUrl: "https://th.bing.com/th/id/R.80ee42d24b0ae51022049b516c0662d6?rik=C8ehle0TaiHDLQ&riu=http%3a%2f%2fbmw.bazzi.biz%2ffarben%2faussen%2fmontreal2.jpg&ehk=l6fPx9KVI5ag5CSKCjQeyvT5lDOxt8VanD7LA%2bzvZbA%3d&risl=&pid=ImgRaw&r=0"
+    photoUrl: "https://img.bmw-syndikat.de/gallery/135/813/739418_bmw-syndikat_bild_high.jpg"
   },
   {
     id: "V-2026-005",
