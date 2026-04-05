@@ -370,7 +370,7 @@ const VEHICLES = [
   region: "Hanau",
   owner: "X. Yildiz",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://tse2.mm.bing.net/th/id/OIP.xyLLY99xqmnCe7ZlC9rmcwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
 },
 {
   id: "V-2026-026",
@@ -380,7 +380,7 @@ const VEHICLES = [
   region: "Main-Kinzig-Kreis",
   owner: "unbekannt",
   notes: "Fahrzeug flüchtete vor Kontrolle.",
-  photoUrl: ""
+  photoUrl: "https://cdn.bimmertoday.de/wp-content/uploads/2022/02/BMW-2er-Active-Tourer-U06-M-Sport-Portimao-Blau-223i-23.jpg"
 },
 {
   id: "V-2026-027",
@@ -390,7 +390,7 @@ const VEHICLES = [
   region: "Friedberg",
   owner: "R. Engel",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://cdn.motor1.com/images/mgl/Vk2pz/s3/renault-clio-e-tech.jpg"
 },
 {
   id: "V-2026-028",
@@ -400,7 +400,7 @@ const VEHICLES = [
   region: "Büdingen",
   owner: "K. König",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://bluesky.cdn.imgeng.in/cogstock-images/Ceed_5dr_Hatch_2022-on_Set_2_DARKPENTAMETAL.jpg?imgeng=/w_auto,700/"
 },
 {
   id: "V-2026-029",
@@ -409,8 +409,8 @@ const VEHICLES = [
   status: "AKTIV",
   region: "Gelnhausen",
   owner: "T. Schmitt",
-  notes: "",
-  photoUrl: ""
+  notes: "Farhzeug wurde als gestohlen gemeldet.",
+  photoUrl: "https://th.bing.com/th/id/R.d8c7782f0d1abe4ee51590cae0f1fc15?rik=g81xk01av38gOw&pid=ImgRaw&r=0"
 },
 {
   id: "V-2026-030",
@@ -420,7 +420,7 @@ const VEHICLES = [
   region: "Frankfurt",
   owner: "M. Engel",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://carwiki.de/wp-content/uploads/2020/10/E_Klasse_Kfz_Steuer_Silber-scaled.jpg"
 },
 {
   id: "V-2026-031",
@@ -430,7 +430,7 @@ const VEHICLES = [
   region: "Offenbach",
   owner: "unbekannt",
   notes: "Im Zusammenhang mit illegalen Rennen.",
-  photoUrl: ""
+  photoUrl: "https://th.bing.com/th/id/R.c76198df46cb8ee454243385e51140e9?rik=5l9xZsjh3%2bvC7Q&riu=http%3a%2f%2fimages.caricos.com%2fa%2falfa_romeo%2f2017_alfa_romeo_giulia_quadrifoglio%2fimages%2f1920x1080%2f2017_alfa_romeo_giulia_quadrifoglio_74_1920x1080.jpg&ehk=U%2b2beuSJFBAsRP6OGKJwWeDDq8%2fxX8WMd1qk2rpscp4%3d&risl=&pid=ImgRaw&r=0"
 },
 {
   id: "V-2026-032",
@@ -440,7 +440,7 @@ const VEHICLES = [
   region: "Hanau",
   owner: "P. Langer",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://cdn.motor1.com/images/mgl/BXA11A/s1/vw-golf-r-20-years-edition-2022-im-kurztest.jpg"
 },
 {
   id: "V-2026-033",
@@ -450,7 +450,7 @@ const VEHICLES = [
   region: "Main-Kinzig-Kreis",
   owner: "J. Transporte",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://tse2.mm.bing.net/th/id/OIP.HQbW7EFso99gs_YC443fkwHaFj?rs=1&pid=ImgDetMain&o=7&rm=3"
 },
 {
   id: "V-2026-034",
@@ -460,7 +460,7 @@ const VEHICLES = [
   region: "Friedberg",
   owner: "D. Aydin",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://autonotizen.de/user/pages/05.fahrberichte/2794.dacia-sandero-tce-90-expression-test-fahrt-video-review-2023/dacia-sandero-tce-90___dacia-sandero-expression-tce-90-schiefer-grau-2023-front-links___1676969309.jpg"
 },
 {
   id: "V-2026-035",
@@ -469,8 +469,8 @@ const VEHICLES = [
   status: "GESUCHT",
   region: "Büdingen",
   owner: "unbekannt",
-  notes: "Zeugen melden extrem laute Auspuffanlage.",
-  photoUrl: ""
+  notes: "Zeugen melden extrem laute Abgasanlage.",
+  photoUrl: "https://4.bp.blogspot.com/-mN3Wj-30XhI/Wr1v-jT-LmI/AAAAAAAAsxE/XtD7dWoVS8IWkGGUQdxI6XyF_VEXuaLUACK4BGAYYCw/s1600/2015%2BSubaru%2BWRX%2BSTI%2B-%2BBlack%2B-%2BImgur-709400.jpg"
 },
 {
   id: "V-2026-036",
@@ -480,7 +480,7 @@ const VEHICLES = [
   region: "Gelnhausen",
   owner: "M. Müller",
   notes: "",
-  photoUrl: ""
+  photoUrl: "https://th.bing.com/th/id/R.46825b37aa2fa74cdb75c2ac69c4b0cb?rik=FjafOvOur9KS9w&pid=ImgRaw&r=0"
   },
   {
     id: "V-2026-037",
@@ -489,8 +489,8 @@ const VEHICLES = [
     status: "GESUCHT",
     region: "Frankfurt",
     owner: "unbekannt",
-    notes: "Fahrzeug flüchtete mit hoher Geschwindigkeit.",
-    photoUrl: ""
+    notes: "Fahrzeug flüchtete mit erhöhter Geschwindigkeit.",
+    photoUrl: "https://zs-gloss-factory.de/wp-content/uploads/2019/11/DSC01543.jpg"
   },
   {
     id: "V-2026-023",
