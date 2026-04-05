@@ -21,4 +21,4 @@ Microsoft© CoPilot
 
 https://maximalbmw.github.io/polizei-db/
 
-©maximalbmw 2026 - Alle Rechte vorbehalten
+*©maximalbmw 2026 - Alle Rechte vorbehalten*
