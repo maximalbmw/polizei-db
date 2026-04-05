@@ -193,6 +193,306 @@ const VEHICLES = [
     photoUrl: "https://live.staticflickr.com/65535/51901700226_535c5a3aa7_b.jpg"
   },
   {
+  id: "V-2026-008",
+  plate: "F-XY 204",
+  type: "PKW, schwarzer Audi A4",
+  status: "AKTIV",
+  region: "Frankfurt am Main",
+  owner: "unbekannt",
+  notes: "Fahrzeug mehrfach im Bahnhofsviertel gesichtet.",
+  photoUrl: ""
+},
+{
+  id: "V-2026-009",
+  plate: "OF-RK 77",
+  type: "PKW, grauer VW Passat",
+  status: "GESUCHT",
+  region: "Offenbach",
+  owner: "unbekannt",
+  notes: "Fluchtfahrzeug nach Verkehrsunfallflucht.",
+  photoUrl: ""
+},
+{
+  id: "V-2026-010",
+  plate: "HG-LM 502",
+  type: "SUV, weißer Volvo XC60",
+  status: "AKTIV",
+  region: "Bad Homburg",
+  owner: "Lena Möller",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-011",
+  plate: "GN-AB 901",
+  type: "PKW, silberner Opel Astra",
+  status: "ARCHIVIERT",
+  region: "Gelnhausen",
+  owner: "Autohaus Bergmann",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-012",
+  plate: "BÜD-F 12",
+  type: "PKW, blauer Ford Focus",
+  status: "AKTIV",
+  region: "Büdingen",
+  owner: "Familie Fischer",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-013",
+  plate: "FB-KL 889",
+  type: "Transporter, weißer Ford Transit",
+  status: "GESUCHT",
+  region: "Friedberg",
+  owner: "unbekannt",
+  notes: "Zeugen melden auffälliges Fahrverhalten.",
+  photoUrl: ""
+},
+{
+  id: "V-2026-014",
+  plate: "MKK-Z 300",
+  type: "PKW, roter Mazda 3",
+  status: "AKTIV",
+  region: "Main-Kinzig-Kreis",
+  owner: "Zara K.",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-015",
+  plate: "F-TS 440",
+  type: "PKW, schwarzer Tesla Model 3",
+  status: "AKTIV",
+  region: "Frankfurt",
+  owner: "Tech Solutions GmbH",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-016",
+  plate: "OF-EE 99",
+  type: "PKW, grüner Skoda Octavia",
+  status: "ARCHIVIERT",
+  region: "Offenbach",
+  owner: "E. Eberhardt",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-017",
+  plate: "HU-TR 55",
+  type: "PKW, weißer Toyota Corolla",
+  status: "AKTIV",
+  region: "Hanau",
+  owner: "T. Riedel",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-018",
+  plate: "F-DA 120",
+  type: "PKW, schwarzer BMW 1er",
+  status: "GESUCHT",
+  region: "Frankfurt",
+  owner: "unbekannt",
+  notes: "Im Zusammenhang mit Taschendiebstählen gemeldet.",
+  photoUrl: ""
+},
+{
+  id: "V-2026-019",
+  plate: "MKK-HH 808",
+  type: "Transporter, grauer VW Crafter",
+  status: "AKTIV",
+  region: "Main-Kinzig-Kreis",
+  owner: "Handwerk Huber",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-020",
+  plate: "FB-OP 77",
+  type: "PKW, silberner Opel Corsa",
+  status: "ARCHIVIERT",
+  region: "Friedberg",
+  owner: "O. Peters",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-021",
+  plate: "BÜD-M 300",
+  type: "PKW, schwarzer Mercedes C-Klasse",
+  status: "AKTIV",
+  region: "Büdingen",
+  owner: "M. Mertens",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-022",
+  plate: "GN-RS 12",
+  type: "PKW, roter Seat Leon",
+  status: "GESUCHT",
+  region: "Gelnhausen",
+  owner: "unbekannt",
+  notes: "Zeugen melden nächtliche Rennen.",
+  photoUrl: ""
+},
+{
+  id: "V-2026-023",
+  plate: "F-LL 501",
+  type: "SUV, schwarzer Audi Q5",
+  status: "AKTIV",
+  region: "Frankfurt",
+  owner: "L. Langen",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-024",
+  plate: "OF-PR 88",
+  type: "PKW, weißer Peugeot 308",
+  status: "ARCHIVIERT",
+  region: "Offenbach",
+  owner: "P. Reuter",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-025",
+  plate: "HU-XY 909",
+  type: "PKW, grauer Hyundai i30",
+  status: "AKTIV",
+  region: "Hanau",
+  owner: "X. Yildiz",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-026",
+  plate: "MKK-AB 44",
+  type: "PKW, blauer BMW 2er",
+  status: "GESUCHT",
+  region: "Main-Kinzig-Kreis",
+  owner: "unbekannt",
+  notes: "Fahrzeug flüchtete vor Kontrolle.",
+  photoUrl: ""
+},
+{
+  id: "V-2026-027",
+  plate: "FB-RE 300",
+  type: "PKW, weißer Renault Clio",
+  status: "AKTIV",
+  region: "Friedberg",
+  owner: "R. Engel",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-028",
+  plate: "BÜD-K 55",
+  type: "PKW, grauer Kia Ceed",
+  status: "ARCHIVIERT",
+  region: "Büdingen",
+  owner: "K. König",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-029",
+  plate: "GN-TS 909",
+  type: "PKW, schwarzer Toyota Supra",
+  status: "AKTIV",
+  region: "Gelnhausen",
+  owner: "T. Schmitt",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-030",
+  plate: "F-ME 77",
+  type: "PKW, silberner Mercedes E-Klasse",
+  status: "AKTIV",
+  region: "Frankfurt",
+  owner: "M. Engel",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-031",
+  plate: "OF-AL 12",
+  type: "PKW, roter Alfa Romeo Giulia",
+  status: "GESUCHT",
+  region: "Offenbach",
+  owner: "unbekannt",
+  notes: "Im Zusammenhang mit illegalen Rennen.",
+  photoUrl: ""
+},
+{
+  id: "V-2026-032",
+  plate: "HU-PL 88",
+  type: "PKW, blauer VW Golf",
+  status: "AKTIV",
+  region: "Hanau",
+  owner: "P. Langer",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-033",
+  plate: "MKK-J 300",
+  type: "Transporter, weißer Sprinter",
+  status: "ARCHIVIERT",
+  region: "Main-Kinzig-Kreis",
+  owner: "J. Transporte",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-034",
+  plate: "FB-DA 55",
+  type: "PKW, grauer Dacia Sandero",
+  status: "AKTIV",
+  region: "Friedberg",
+  owner: "D. Aydin",
+  notes: "",
+  photoUrl: ""
+},
+{
+  id: "V-2026-035",
+  plate: "BÜD-S 909",
+  type: "PKW, schwarzer Subaru Impreza",
+  status: "GESUCHT",
+  region: "Büdingen",
+  owner: "unbekannt",
+  notes: "Zeugen melden extrem laute Auspuffanlage.",
+  photoUrl: ""
+},
+{
+  id: "V-2026-036",
+  plate: "GN-M 77",
+  type: "PKW, weißer Mini Cooper",
+  status: "AKTIV",
+  region: "Gelnhausen",
+  owner: "M. Müller",
+  notes: "",
+  photoUrl: ""
+  },
+  {
+    id: "V-2026-037",
+    plate: "F-AR 300",
+    type: "PKW, schwarzer Audi RS3",
+    status: "GESUCHT",
+    region: "Frankfurt",
+    owner: "unbekannt",
+    notes: "Fahrzeug flüchtete mit hoher Geschwindigkeit.",
+    photoUrl: ""
+  },
+  {
     id: "V-2026-023",
     plate: "FB-OM 7078",
     type: "PKW, dunkelgrauer BMW 3er",
