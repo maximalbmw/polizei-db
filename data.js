@@ -72,6 +72,30 @@ const PERSONS = [
     photo: null
   },
   {
+    id: "P-2026-007",
+    name: "Dr. Tabea Bach",
+    dob: "1988-11-14",
+    status: "ARCHIVIERT",
+    region: "Bad Nauheim",
+    notes: "- keine -",
+    lastSeen: "2025-12-12, Bad Nauheim",
+    risk: "niedrig",
+    fileRef: "AZ: 26-FG-6464",
+    photo: null
+  },
+  {
+    id: "P-2026-008",
+    name: "Paul Paul",
+    dob: "1973-01-12",
+    status: "ARCHIVIERT",
+    region: "Frankfurt am Main",
+    notes: "- keine -",
+    lastSeen: "2026-04-03, Frankfurt am Main",
+    risk: "niedrig",
+    fileRef: "AZ: 67-XV-5349",
+    photo: null
+  },
+  {
     id: "P-2026-153",
     name: "Semir Gerkhan",
     dob: "1966-04-22",
@@ -127,6 +151,16 @@ const VEHICLES = [
     owner: "Tarek Yilmaz",
     notes: "Ehemals in Ermittlungen, Vorgang abgeschlossen.",
     photoUrl: "https://carwiki.de/wp-content/uploads/2020/10/Mercedes_Benz_Sprinter_Kfz_Steuer-scaled.jpg"
+  },
+  {
+    id: "V-2026-004",
+    plate: "GN-EX 39",
+    type: "PKW, dunkelblauer BMW 5er",
+    status: "ARCHIVIERT",
+    region: "Gelnhausen",
+    owner: "unbekannt",
+    notes: "- keine -",
+    photoUrl: "https://th.bing.com/th/id/R.80ee42d24b0ae51022049b516c0662d6?rik=C8ehle0TaiHDLQ&riu=http%3a%2f%2fbmw.bazzi.biz%2ffarben%2faussen%2fmontreal2.jpg&ehk=l6fPx9KVI5ag5CSKCjQeyvT5lDOxt8VanD7LA%2bzvZbA%3d&risl=&pid=ImgRaw&r=0"
   },
   {
     id: "V-2026-023",
