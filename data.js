@@ -493,7 +493,7 @@ const VEHICLES = [
     photoUrl: "https://zs-gloss-factory.de/wp-content/uploads/2019/11/DSC01543.jpg"
   },
   {
-    id: "V-2026-023",
+    id: "V-2026-038",
     plate: "FB-OM 7078",
     type: "PKW, dunkelgrauer BMW 3er",
     status: "ARCHIVIERT",
@@ -503,7 +503,7 @@ const VEHICLES = [
     photoUrl: "https://img.bmw-syndikat.de/gallery/142/231/bild_fotos_174899.JPG"
   },
   {
-    id: "V-2026-024",
+    id: "V-2026-039",
     plate: "FB-XY 34",
     type: "PKW, silberner BMW 5er",
     status: "ARCHIVIERT",
