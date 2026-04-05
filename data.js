@@ -163,6 +163,16 @@ const VEHICLES = [
     photoUrl: "https://th.bing.com/th/id/R.80ee42d24b0ae51022049b516c0662d6?rik=C8ehle0TaiHDLQ&riu=http%3a%2f%2fbmw.bazzi.biz%2ffarben%2faussen%2fmontreal2.jpg&ehk=l6fPx9KVI5ag5CSKCjQeyvT5lDOxt8VanD7LA%2bzvZbA%3d&risl=&pid=ImgRaw&r=0"
   },
   {
+    id: "V-2026-005",
+    plate: "BÜD-ZM 320",
+    type: "PKW, schwarzer Mercedes",
+    status: "ARCHIVIERT",
+    region: "Büdingen",
+    owner: "Tim Mannhaimer",
+    notes: "- keine -",
+    photoUrl: "https://cdn.classic-trader.com/I/images/1920_1920_inset/vehicle_ad_standard_image_3f5d09df43a8a3c191329240b8eb5fbf.jpg"
+  },
+  {
     id: "V-2026-023",
     plate: "FB-OM 7078",
     type: "PKW, dunkelgrauer BMW 3er",
