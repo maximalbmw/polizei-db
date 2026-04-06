@@ -1,8 +1,12 @@
-# polizei-db
+# Polizei Datenbank
 
 Diese fiktive Polizeidatenbank des Landes Hessen ist **ausschließlich** für Film -und Privatzwecke konzipiert!
 Verwendung erfordert die Genehmigung von maximalbmw (info@nexa-it-services.com).
 Bei Missbrauch dieser Dtaenbank übernehme ich **keinerlei** Verantwortung!
+
+## POLIS
+
+POLIS ist die Abkürzung für diese Datenbank und steht für Polizei-Informationsdatenbank, dieser Titel wurde von einer KI erstellt, jede Ähnlichkeit zu real existierenden Tools der Polizei Hessen und der Bundespolizei sind reiner Zufall, ich weise jegliche Verantwortung zurück!
 
 ## Rechte
 
