@@ -2,7 +2,7 @@
 
 Diese fiktive Polizeidatenbank des Landes Hessen ist **ausschließlich** für Film -und Privatzwecke konzipiert!
 Verwendung erfordert die Genehmigung von maximalbmw (info@nexa-it-services.com).
-Bei Missbrauch dieser Dtaenbank übernehme ich **keinerlei** Verantwortung!
+Bei Missbrauch dieser Dataenbank übernehme ich **keinerlei** Verantwortung!
 
 ## POLIS
 
