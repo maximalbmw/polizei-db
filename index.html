@@ -2,31 +2,49 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>POLIS – Polizei Informationssystem Hessen</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
   <!-- LOGIN SCREEN -->
   <div class="login-screen" id="login-screen">
+    <div class="login-particles"></div>
     <div class="login-box">
+      <div class="login-header">
+        <img 
+          src="logo-polizei-hessen.png"
+          class="login-logo"
+          alt="Polizei Hessen Logo"
+        >
+        <div class="login-badge">VERSCHLUSSSACHE</div>
+      </div>
 
-      <img 
-        src="logo-polizei-hessen.png"
-        class="login-logo"
-        alt="Polizei Hessen Logo"
-      >
+      <h1><i class="fas fa-shield-halved"></i> POLIS</h1>
+      <p class="login-subtitle">Polizei-Informationssystem Hessen<br>Zugriffskontrolle</p>
 
-      <h1>POLIS // Zugriffskontrolle</h1>
+      <div class="login-form">
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" id="username" placeholder="Dienstkennung eingeben">
+        </div>
 
-      <label>Benutzername</label>
-      <input type="text" id="username" placeholder="ics-operator-01">
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="password" placeholder="Passwort">
+        </div>
 
-      <label>Passwort</label>
-      <input type="password" id="password" placeholder="••••••••">
+        <button id="login-btn">
+          <i class="fas fa-right-to-bracket"></i> Authentifizieren
+        </button>
+      </div>
 
-      <button id="login-btn">Anmelden</button>
       <div class="login-status" id="login-status"></div>
+      <div class="login-footer">
+        <i class="fas fa-triangle-exclamation"></i> Unbefugter Zugriff wird strafrechtlich verfolgt
+      </div>
     </div>
   </div>
 
@@ -39,29 +57,52 @@
           class="topbar-logo"
           alt="Polizei Hessen Logo"
         >
-        <span class="logo">POLIS</span>
-        <span class="subtitle">Polizei-Informationsdatenbank Hessen // Intern</span>
+        <div class="topbar-brand">
+          <span class="logo"><i class="fas fa-shield-halved"></i> POLIS</span>
+          <span class="subtitle">Polizei-Informationsdatenbank Hessen // Klassifiziert</span>
+        </div>
       </div>
 
       <div class="topbar-right">
-        <span id="user-display"></span>
-        <span class="badge badge-green">VERBUNDEN</span>
+        <div class="topbar-status">
+          <span class="badge badge-green"><i class="fas fa-circle"></i> VERBUNDEN</span>
+          <span class="badge badge-blue"><i class="fas fa-lock"></i> VERSCHLÜSSELT</span>
+        </div>
+        <div class="topbar-user">
+          <i class="fas fa-user-shield"></i>
+          <span id="user-display"></span>
+        </div>
+        <button class="btn-logout" id="logout-btn" title="Abmelden">
+          <i class="fas fa-power-off"></i>
+        </button>
       </div>
     </header>
 
     <div class="layout">
       <nav class="sidebar">
-        <h2>Module</h2>
-        <ul>
-          <li class="active" data-module="persons">Personen</li>
-          <li data-module="vehicles">Fahrzeuge</li>
-          <li data-module="cases">Fälle</li>
-          <li data-module="map">Karte</li>
-          <li id="admin-btn">Admin</li>
-        </ul>
+        <div class="sidebar-top">
+          <h2><i class="fas fa-grid-2"></i> Module</h2>
+          <ul>
+            <li class="active" data-module="persons">
+              <i class="fas fa-users"></i> Personen
+            </li>
+            <li data-module="vehicles">
+              <i class="fas fa-car"></i> Fahrzeuge
+            </li>
+            <li data-module="cases">
+              <i class="fas fa-folder-open"></i> Fälle
+            </li>
+            <li data-module="map">
+              <i class="fas fa-map-location-dot"></i> Karte
+            </li>
+            <li id="admin-btn">
+              <i class="fas fa-gear"></i> Admin
+            </li>
+          </ul>
+        </div>
 
         <div class="sidebar-footer">
-          <div>Audit-Log</div>
+          <div class="audit-header"><i class="fas fa-clock-rotate-left"></i> Audit-Log</div>
           <small id="audit-log">Zugriff protokolliert…</small>
         </div>
       </nav>
@@ -71,8 +112,11 @@
         <!-- SUCHE -->
         <section class="search-section" id="search-section">
           <div class="search-row">
-            <input type="text" id="search-input" placeholder="Suche nach Name, ID, Kennzeichen, Region…">
-            <button id="search-btn">Suche</button>
+            <div class="search-input-wrapper">
+              <i class="fas fa-magnifying-glass"></i>
+              <input type="text" id="search-input" placeholder="Suche nach Name, ID, Kennzeichen, Region…">
+            </div>
+            <button id="search-btn"><i class="fas fa-search"></i> Suche</button>
           </div>
 
           <div class="filters-row">
@@ -82,6 +126,7 @@
               <option value="GESUCHT">GESUCHT</option>
               <option value="ARCHIVIERT">ARCHIVIERT</option>
             </select>
+            <div class="result-count" id="result-count"></div>
           </div>
         </section>
 
@@ -89,79 +134,94 @@
         <section class="content" id="content-section">
           <!-- Personen-Ansicht -->
           <div class="results" id="results-persons">
-            <h2>Personen – Trefferliste</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Geburtsdatum</th>
-                  <th>Status</th>
-                  <th>Region</th>
-                </tr>
-              </thead>
-              <tbody id="results-body-persons"></tbody>
-            </table>
+            <h2><i class="fas fa-users"></i> Personen – Trefferliste</h2>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Geburtsdatum</th>
+                    <th>Status</th>
+                    <th>Region</th>
+                  </tr>
+                </thead>
+                <tbody id="results-body-persons"></tbody>
+              </table>
+            </div>
           </div>
 
           <div class="details" id="details-persons">
-            <h2>Personen – Details</h2>
+            <h2><i class="fas fa-id-card"></i> Personen – Details</h2>
             <div id="details-content-persons">
-              <p>Bitte einen Datensatz aus der Liste auswählen.</p>
+              <div class="empty-state">
+                <i class="fas fa-hand-pointer"></i>
+                <p>Bitte einen Datensatz aus der Liste auswählen.</p>
+              </div>
             </div>
           </div>
 
           <!-- Fahrzeuge-Ansicht -->
           <div class="results hidden" id="results-vehicles">
-            <h2>Fahrzeuge – Trefferliste</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Kennzeichen</th>
-                  <th>Typ</th>
-                  <th>Status</th>
-                  <th>Region</th>
-                </tr>
-              </thead>
-              <tbody id="results-body-vehicles"></tbody>
-            </table>
+            <h2><i class="fas fa-car"></i> Fahrzeuge – Trefferliste</h2>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Kennzeichen</th>
+                    <th>Typ</th>
+                    <th>Status</th>
+                    <th>Region</th>
+                  </tr>
+                </thead>
+                <tbody id="results-body-vehicles"></tbody>
+              </table>
+            </div>
           </div>
 
           <div class="details hidden" id="details-vehicles">
-            <h2>Fahrzeuge – Details</h2>
+            <h2><i class="fas fa-car-side"></i> Fahrzeuge – Details</h2>
             <div id="details-content-vehicles">
-              <p>Bitte ein Fahrzeug aus der Liste auswählen.</p>
+              <div class="empty-state">
+                <i class="fas fa-hand-pointer"></i>
+                <p>Bitte ein Fahrzeug aus der Liste auswählen.</p>
+              </div>
             </div>
           </div>
 
           <!-- Fälle-Ansicht -->
           <div class="results hidden" id="results-cases">
-            <h2>Fälle – Trefferliste</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>AZ</th>
-                  <th>Titel</th>
-                  <th>Status</th>
-                  <th>Region</th>
-                  <th>Ermittler</th>
-                </tr>
-              </thead>
-              <tbody id="results-body-cases"></tbody>
-            </table>
+            <h2><i class="fas fa-folder-open"></i> Fälle – Trefferliste</h2>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>AZ</th>
+                    <th>Titel</th>
+                    <th>Status</th>
+                    <th>Region</th>
+                    <th>Ermittler</th>
+                  </tr>
+                </thead>
+                <tbody id="results-body-cases"></tbody>
+              </table>
+            </div>
           </div>
 
           <div class="details hidden" id="details-cases">
-            <h2>Fälle – Details</h2>
+            <h2><i class="fas fa-file-lines"></i> Fälle – Details</h2>
             <div id="details-content-cases">
-              <p>Bitte einen Fall aus der Liste auswählen.</p>
+              <div class="empty-state">
+                <i class="fas fa-hand-pointer"></i>
+                <p>Bitte einen Fall aus der Liste auswählen.</p>
+              </div>
             </div>
           </div>
 
           <!-- Karten-Ansicht -->
           <div class="map-view hidden" id="map-view">
-            <h2>Kartenansicht</h2>
+            <h2><i class="fas fa-map-location-dot"></i> Kartenansicht – Einsatzgebiet Rhein-Main</h2>
             <div class="map-container">
               <iframe
                 src="https://www.openstreetmap.org/export/embed.html?bbox=8.5,50.0,9.5,50.5&layer=mapnik&marker=50.15,8.8"
@@ -169,39 +229,50 @@
                 loading="lazy"
               ></iframe>
             </div>
-            <p class="map-hint">
-              Darstellung beispielhaft (Raum Rhein-Main). Für Filmzwecke kannst du diesen Ausschnitt nutzen.
-            </p>
           </div>
         </section>
 
         <!-- ADMIN PANEL -->
         <div class="admin-panel" id="admin-panel" style="display:none;">
-          <h2>Neuen Personendatensatz hinzufügen</h2>
+          <h2><i class="fas fa-plus-circle"></i> Neuen Personendatensatz hinzufügen</h2>
 
-          <label>Name</label>
-          <input type="text" id="admin-name">
+          <div class="admin-grid">
+            <div class="admin-field">
+              <label>Name</label>
+              <input type="text" id="admin-name" placeholder="Vor- und Nachname">
+            </div>
 
-          <label>Geburtsdatum</label>
-          <input type="date" id="admin-dob">
+            <div class="admin-field">
+              <label>Geburtsdatum</label>
+              <input type="date" id="admin-dob">
+            </div>
 
-          <label>Status</label>
-          <select id="admin-status">
-            <option value="AKTIV">AKTIV</option>
-            <option value="GESUCHT">GESUCHT</option>
-            <option value="ARCHIVIERT">ARCHIVIERT</option>
-          </select>
+            <div class="admin-field">
+              <label>Status</label>
+              <select id="admin-status">
+                <option value="AKTIV">AKTIV</option>
+                <option value="GESUCHT">GESUCHT</option>
+                <option value="ARCHIVIERT">ARCHIVIERT</option>
+              </select>
+            </div>
 
-          <label>Region</label>
-          <input type="text" id="admin-region">
+            <div class="admin-field">
+              <label>Region</label>
+              <input type="text" id="admin-region" placeholder="z.B. Frankfurt am Main">
+            </div>
 
-          <label>Notizen</label>
-          <textarea id="admin-notes"></textarea>
+            <div class="admin-field full-width">
+              <label>Notizen</label>
+              <textarea id="admin-notes" placeholder="Ermittlungsrelevante Hinweise…"></textarea>
+            </div>
 
-          <label>Bild der Person</label>
-          <input type="file" id="admin-image" accept="image/*">
+            <div class="admin-field full-width">
+              <label>Bild der Person</label>
+              <input type="file" id="admin-image" accept="image/*">
+            </div>
+          </div>
 
-          <button id="admin-save">Speichern</button>
+          <button id="admin-save"><i class="fas fa-floppy-disk"></i> Datensatz speichern</button>
         </div>
 
       </main>
