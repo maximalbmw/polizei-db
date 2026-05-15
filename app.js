@@ -5,33 +5,56 @@ const loginBtn = document.getElementById("login-btn");
 const loginStatus = document.getElementById("login-status");
 const userDisplay = document.getElementById("user-display");
 
-loginBtn.addEventListener("click", () => {
+loginBtn.addEventListener("click", async () => {
   const user = document.getElementById("username").value.trim();
   const pass = document.getElementById("password").value.trim();
 
-  const found = USERS.find(u => u.username === user && u.password === pass);
+  if (!user || !pass) {
+    loginStatus.textContent = "Bitte Dienstkennung und Passwort eingeben.";
+    return;
+  }
 
   loginStatus.textContent = "Authentifizierung läuft…";
 
-  setTimeout(() => {
-    if (!found) {
-      loginStatus.textContent = "Zugang verweigert – ungültige Anmeldedaten.";
-      return;
-    }
+  // Kurze Verzögerung für realistischen Effekt
+  await new Promise(r => setTimeout(r, 800));
 
-    loginScreen.style.display = "none";
-    app.style.display = "flex";
+  const found = await authenticateUser(user, pass);
 
-    userDisplay.textContent = found.username.toUpperCase();
+  if (!found) {
+    loginStatus.textContent = "Zugang verweigert – ungültige Anmeldedaten.";
+    return;
+  }
 
-    document.getElementById("audit-log").textContent =
-      "Zugriff protokolliert – " +
-      new Date().toLocaleString("de-DE") +
-      " – Benutzer: " +
-      found.username;
+  loginScreen.style.display = "none";
+  app.style.display = "flex";
 
-    loadAndRender();
-  }, 700);
+  userDisplay.textContent = found.username.toUpperCase();
+
+  document.getElementById("audit-log").textContent =
+    "Zugriff protokolliert – " +
+    new Date().toLocaleString("de-DE") +
+    " – Benutzer: " +
+    found.username;
+
+  loadAndRender();
+});
+
+// LOGOUT
+document.getElementById("logout-btn").addEventListener("click", () => {
+  app.style.display = "none";
+  loginScreen.style.display = "flex";
+  document.getElementById("username").value = "";
+  document.getElementById("password").value = "";
+  loginStatus.textContent = "";
+});
+
+// Enter-Taste im Login
+document.getElementById("password").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") loginBtn.click();
+});
+document.getElementById("username").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") loginBtn.click();
 });
 
 // LOCAL STORAGE PERSONS
